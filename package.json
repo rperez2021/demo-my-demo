@@ -1,0 +1,23 @@
+{
+  "name": "demo-my-demo",
+  "version": "1.0.0",
+  "description": "An Electron app that Lets you Demo an SDK over an existing webpage.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rperez2021/demo-my-demo.git"
+  },
+  "keywords": [
+    "Electron",
+    "Javascript"
+  ],
+  "author": "Roberto Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rperez2021/demo-my-demo/issues"
+  },
+  "homepage": "https://github.com/rperez2021/demo-my-demo#readme"
+}
