@@ -10,10 +10,10 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <title>Welcome to Demo My Demo!</title>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
+    <h1>Enter the Site You Want To Demo:</h1>
     <p>👋</p>
     <p id="info"></p>
     <p id="ping"></p>
@@ -21,6 +21,11 @@
     <button id="btn" type="button">Set</button>
     <button type="button" id="btn2">Open a File</button>
     File path: <strong id="filePath"></strong>
+    Current value: <strong id="counter">0</strong>
+    <br>
+    URL: <input id="url"/>
+    Script Location: <input id="script"/>
+    <button type="button" id="btn3">New Page</button>
   </body>
   <script src="./renderer.js"></script>
 </html>

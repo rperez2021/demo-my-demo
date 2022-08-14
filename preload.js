@@ -10,5 +10,7 @@ contextBridge.exposeInMainWorld('versions', {
 
 contextBridge.exposeInMainWorld('electronAPI', {
   setTitle: (title) => ipcRenderer.send('set-title', title),
-  openFile: () => ipcRenderer.invoke('dialog:openFile')
+  openFile: () => ipcRenderer.invoke('dialog:openFile'),
+  handleCounter: (callback) => ipcRenderer.on('update-counter', callback),
+  changePage: (page, script) => ipcRenderer.send('change-page', page, script)
 })

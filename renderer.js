@@ -24,3 +24,21 @@ btn.addEventListener('click', async () => {
   const filePath = await window.electronAPI.openFile()
   filePathElement.innerText = filePath
 })
+
+const counter = document.getElementById('counter')
+
+window.electronAPI.handleCounter((event, value) => {
+    const oldValue = Number(counter.innerText)
+    const newValue = oldValue + value
+    counter.innerText = newValue
+    event.sender.send('counter-value', newValue)
+})
+
+const urlInput = document.getElementById('url')
+const scriptInput = document.getElementById('script')
+const btn3 = document.getElementById('btn3')
+btn3.addEventListener('click', () => {
+  const page = urlInput.value
+  const script = scriptInput.value
+  window.electronAPI.changePage(page, script)
+});
